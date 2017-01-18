@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tc2r.binarydecimal.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_BinDecTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Binary / Decimal Converter"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_binary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tv_decimal"
+        android:layout_marginEnd="12dp"
+        android:text="Enter binary"/>
+
+    <EditText
+        android:id="@+id/et_enterbinary"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_binary"
+        android:layout_below="@+id/tv_binary"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text="1.91"/>
+
+
+    <EditText
+        android:id="@+id/et_enterdecimal"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_decimal"
+        android:layout_below="@+id/tv_decimal"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1.50"/>
+
+    <TextView
+        android:id="@+id/tv_decimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_BinDecTitle"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="23dp"
+        android:text="Enter Decimal"/>
+
+
+    <RadioGroup
+        android:id="@+id/rg_Binary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_BinDecTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_Binary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:checked="true"
+            android:onClick="RbClicked"
+            android:text="To Binary"
+            android:textColor="#1bf60b"/>
+
+
+        <RadioButton
+            android:id="@+id/rb_Decimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="RbClicked"
+            android:text="To Decimal"
+            android:textColor="#00f2ff"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_bindecconvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_Binary"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Convert"/>
+
+    <TextView
+        android:id="@+id/tv_binResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_bindecconvert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="TextView"/>
+</RelativeLayout>

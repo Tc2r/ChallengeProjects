@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AlarmClck</string>
+
+    <string-array name="ringtone_array">
+        <item>RingTone 1</item>
+        <item>RingTone 2</item>
+        <item>RingTone 3</item>
+        <item>RingTone 4</item>
+        <item>RingTone 5</item>
+    </string-array>
+</resources>

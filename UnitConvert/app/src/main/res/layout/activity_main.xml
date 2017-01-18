@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tc2r.unitconvert.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_UCTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Unit Converter"
+        android:textSize="20dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/spin_UnitType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Convert Unit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/tv_converttext"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:text="Into Unit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/tv_intotext"
+                android:textSize="18dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/spin_from"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"/>
+            <Spinner
+                android:id="@+id/spin_into"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_weight="1"
+                android:id="@+id/et_FromInput"
+                android:gravity="center_horizontal"
+                android:hint="0.00"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:text="00.00"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_IntoResult"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_gravity="fill"
+                android:textSize="20dp"
+                android:lines="2"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:maxLines="3"/>
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </TableLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tc2r.finbonacci.MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:text="Finbonacci"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_count"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sequence"
+        android:text="0"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_below="@+id/go_btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/go_btn"
+        android:text="Go!"
+        android:layout_below="@+id/et_count"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
+</RelativeLayout>
