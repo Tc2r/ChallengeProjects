@@ -1,4 +1,4 @@
-A bunch of projects inspired from [thekarangoel](https://github.com/karan)
+A bunch of Android Studio projects inspired from [thekarangoel](https://github.com/karan)
 
 A few have been completed to a more abstract sense of the question. I may be 100% explicit in answering at some stage or might end up just leaving the problems in functions/classes to be called from main.
 
